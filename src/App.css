@@ -1,0 +1,31 @@
+@keyframes slowOpen {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scaleY(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes slowClose {
+  from {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px) scaleY(0.95);
+  }
+}
+
+.animate-slowOpen {
+  animation: slowOpen 1.5s ease-in-out forwards;
+}
+
+.animate-slowClose {
+  animation: slowClose 1.5s ease-in-out forwards;
+}
+
+
